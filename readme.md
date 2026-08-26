@@ -95,6 +95,7 @@ Open http://localhost:8501 in your browser.
 
 ### Extracted Intelligence (Summary JSON)
 
+```text
 {
   "document_type": "Emergency Lab Alert & Medication Review",
   "overall_urgency": "CRITICAL",
@@ -127,7 +128,7 @@ Open http://localhost:8501 in your browser.
     }
   ]
 }
-
+```
 ---
 
 ## 🔮 Future Roadmap
