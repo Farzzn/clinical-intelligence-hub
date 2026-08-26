@@ -146,32 +146,3 @@ Open http://localhost:8501 in your browser.
 ## 📄 Attribution & Evaluation Context
 Developed as part of the Firstsource Forward Deployed Engineer – Agentic AI Proof of Concept evaluation.
 
-
-## 🏗️ System Architecture
-
-```mermaid
-flowchart TD
-    A[📄 Clinical Inputs: PDF / TXT / Handwritten Prescriptions] --> B[📥 Ingestion & Normalization Layer]
-    B --> C[🧠 Multimodal Extraction Engine: Gemini 2.5 Flash]
-    
-    subgraph Engine [Core Intelligence Capabilities]
-        C1[Visual OCR & Medical Abbreviation Parsing]
-        C2[Multi-Document Cross-Reconciliation]
-        C3[Verbatim Source-Quote Grounding]
-    end
-    C --- Engine
-    
-    C --> D[🛡️ Pydantic v2 Schema Validation]
-    
-    subgraph Schemas [Structured Data Models]
-        D1[PatientDemographics & Vitals]
-        D2[LabBiomarkers & Medications]
-        D3[ClinicalRiskFlags & ActionPlan]
-    end
-    D --- Schemas
-    
-    D --> E[📊 Decision Support Dashboard - Streamlit Cloud]
-    E --> F[Dual Split-Screen Viewer]
-    E --> G[Risk Badges & Triage Urgency]
-    E --> H[Validated JSON Export]
-```
