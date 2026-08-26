@@ -64,21 +64,14 @@ git clone https://github.com/Farzzn/clinical-intelligence-hub.git
 cd clinical-intelligence-hub
 ```
 
-# Create and activate virtual environment
+#### Create and activate virtual environment
 ```text
 python -m venv venv
-```
-# On Windows:
-```text
-.\venv\Scripts\activate
+.\venv\Scripts\activate  ( For Windows )
+source venv/bin/activate ( For Mac / Linux)
 ```
 
-# On Linux/macOS:
-```text
-source venv/bin/activate
-```
-
-# Install dependencies
+#### Install dependencies
 ```text
 pip install -r requirements.txt
 ```
