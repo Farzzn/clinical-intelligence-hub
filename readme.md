@@ -17,6 +17,7 @@ An AI-powered multimodal clinical decision support engine designed to ingest uns
 
 ## 🏗️ System Architecture
 
+```text
 +-------------------------------------------------------------+
 |        Clinical Inputs (PDF / TXT / Handwritten Scans)      |
 +-------------------------------------------------------------+
@@ -49,8 +50,7 @@ An AI-powered multimodal clinical decision support engine designed to ingest uns
 |  - Urgency Badges & Interactive Data Tables                 |
 |  - Validated JSON Report Export                             |
 +-------------------------------------------------------------+
-
----
+```
 
 ## 🚀 Quickstart & Local Setup
 
