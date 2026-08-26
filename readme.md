@@ -18,38 +18,38 @@ An AI-powered multimodal clinical decision support engine designed to ingest uns
 ## 🏗️ System Architecture
 
 ```text
-+-------------------------------------------------------------+
-|        Clinical Inputs (PDF / TXT / Handwritten Scans)      |
-+-------------------------------------------------------------+
-                               |
-                               v
-+-------------------------------------------------------------+
-|               Ingestion & Normalization Layer               |
-+-------------------------------------------------------------+
-                               |
-                               v
-+-------------------------------------------------------------+
-|      Multimodal Extraction Engine (Gemini 2.5 Flash)        |
-|  - Visual OCR & Clinical Abbreviation Resolution            |
-|  - Multi-Document Context Fusion & Cross-Reconciliation     |
-|  - Grounded Citation & Source Extraction                    |
-+-------------------------------------------------------------+
-                               |
-                               v
-+-------------------------------------------------------------+
-|              Pydantic v2 Schema Validation                  |
-|  - PatientDemographics & VitalSigns                         |
-|  - LabBiomarkers & MedicationItem                           |
-|  - ClinicalRiskFlags & ActionItem                           |
-+-------------------------------------------------------------+
-                               |
-                               v
-+-------------------------------------------------------------+
-|               Decision Support Dashboard                    |
-|  - Split-Screen Dual Viewer (Raw Document vs Extracted Cards)|
-|  - Urgency Badges & Interactive Data Tables                 |
-|  - Validated JSON Report Export                             |
-+-------------------------------------------------------------+
+                +-------------------------------------------------------------+
+                |        Clinical Inputs (PDF / TXT / Handwritten Scans)      |
+                +-------------------------------------------------------------+
+                                            |
+                                            v
+                +-------------------------------------------------------------+
+                |               Ingestion & Normalization Layer               |
+                +-------------------------------------------------------------+
+                                            |
+                                            v
+                +-------------------------------------------------------------+
+                |      Multimodal Extraction Engine (Gemini 2.5 Flash)        |
+                |  - Visual OCR & Clinical Abbreviation Resolution            |
+                |  - Multi-Document Context Fusion & Cross-Reconciliation     |
+                |  - Grounded Citation & Source Extraction                    |
+                +-------------------------------------------------------------+
+                                            |
+                                            v
+                +-------------------------------------------------------------+
+                |              Pydantic v2 Schema Validation                  |
+                |  - PatientDemographics & VitalSigns                         |
+                |  - LabBiomarkers & MedicationItem                           |
+                |  - ClinicalRiskFlags & ActionItem                           |
+                +-------------------------------------------------------------+
+                                            |
+                                            v
+                +-------------------------------------------------------------+
+                |               Decision Support Dashboard                    |
+                |  - Split-Screen Dual Viewer (Raw Document vs Extracted Cards)|
+                |  - Urgency Badges & Interactive Data Tables                 |
+                |  - Validated JSON Report Export                             |
+                +-------------------------------------------------------------+
 ```
 
 ## 🚀 Quickstart & Local Setup
@@ -59,19 +59,28 @@ An AI-powered multimodal clinical decision support engine designed to ingest uns
 - Google AI Studio API Key (GEMINI_API_KEY)
 
 ### 2. Installation
-
+```text
 git clone https://github.com/Farzzn/clinical-intelligence-hub.git
 cd clinical-intelligence-hub
+```
 
 # Create and activate virtual environment
+```text
 python -m venv venv
+```
 # On Windows:
+```text
 .\venv\Scripts\activate
+```text
 # On Linux/macOS:
+```text
 source venv/bin/activate
+```
 
 # Install dependencies
+```text
 pip install -r requirements.txt
+```text
 
 ### 3. Environment Configuration
 
