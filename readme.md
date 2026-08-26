@@ -71,7 +71,8 @@ python -m venv venv
 # On Windows:
 ```text
 .\venv\Scripts\activate
-```text
+```
+
 # On Linux/macOS:
 ```text
 source venv/bin/activate
@@ -80,7 +81,8 @@ source venv/bin/activate
 # Install dependencies
 ```text
 pip install -r requirements.txt
-```text
+```
+
 
 ### 3. Environment Configuration
 
@@ -89,9 +91,9 @@ Create a .env file in the root directory:
 GEMINI_API_KEY="your-google-ai-studio-api-key"
 
 ### 4. Run Application
-
+```text
 streamlit run app.py
-
+```
 Open http://localhost:8501 in your browser.
 
 ---
