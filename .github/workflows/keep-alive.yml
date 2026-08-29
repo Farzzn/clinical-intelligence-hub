@@ -1,0 +1,15 @@
+name: Keep Streamlit App Awake
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # every 30 minutes
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping app
+        run: |
+          curl -sS "https://clinical-intelligence-app-jw7msueqmvmty3dfm3vfad.streamlit.app/" \
+            -o /dev/null -w "Status: %{http_code}\n"
